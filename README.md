@@ -16,8 +16,7 @@ were traded in the US.
 
 
 
-📌 In this Project, we assumed the role of a quantitative analyst for using a FinTech investing platform. This platform aims to offer investor one-stop online investment solution for their options part of portfolio.
-
+📌 In this Project, we assumed the role of a quantitative analyst for using a FinTech investing platform. This platform aims to offer investor sophisticated Options Trading mechanism. Using Mashine Learning to evaluate our trading algorithm written in Python we strive to remove unsertanty and a human factor to automate Options investment desicion making.
 
 
 
@@ -28,85 +27,6 @@ were traded in the US.
 
 
 
-
-
-
-
-   
-
-
-
-Technical requirements for Project 2.
-
-## Software Version Control (10 points)
------------------Repository created on GitHub. (2 points)
-
------------------Files frequently committed to repository. (3 points)
-
------------------Commit messages with appropriate level of detail included. (2 points)
-
------------------Repository organized, and relevant information and project files included. (3 points)
-
-## Data Collection and Preparation (10 points)
------------------Data collected from CSV files, APIs, or databases by using Python or a Python library. (5 points)
-
------------------Data cleaned and prepared for the application or analysis by using Python or a Python library. (5 points)
-
-### Libraries / interfaces
-*  Pandas - is a software library designed for data analytics that makes it easier to work with data from practically any type of file. Pandas supplies powerful tools for working with time data in particular, and time is a key aspect of financial analysis. Analysts typically compare and measure financial assets—from single stocks to large portfolios—across time.
-* With the combination of Pandas and Jupyter Notebook, you can efficiently import, prepare, and analyze data of any type or quantity.
-* Following libraries were used to analyze the data
-
-```
-# Import the required libraries and dependencies
-
-
-```
-
-* New libriry we used helped us to clean the warnings in the code
-
-
-## Machine Learning (40 points)
-Jupyter notebook and Google Colab used to prepare training and testing datasets. (5 points)
-
---------------------Following machine learning models created. (5 points)
-
-
-
---------------------We fit models to the training data. (5 points)
-
---------------------Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points)
-
---------------------Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points)
-
---------------------PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points)
-
---------------------One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points)
-
-## Documentation (15 points)
-
-You can find Code in Jupyter Notebook  is well commented with concise, relevant notes. (5 points)
-
-GitHub README.md file includes a concise project overview. (2 points)
-
-### Project overview.
-
-
-
-
-GitHub README.md file includes detailed usage and installation instructions. (3 points)
-
-
-
-
-GitHub README.md file includes either examples of the application or the results and summary of the analysis. (5 points)
-
-### Work with GitHub
-* Repository created on GitHub
-* Our group made sure that files  were frequently committed to repository
-* Our repository is organized, and includes Resources folder with CSV  project files, 
-*
-* Detailed explanation of each step with explanation of financial data and conclusions of analyses (example)
 
 
 
@@ -165,6 +85,7 @@ The data preparation and model training process. (3 points)
 --------------------Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
 
 
+### Project overview.
 
 
 ### What is special about out project?
@@ -172,14 +93,101 @@ The data preparation and model training process. (3 points)
 * Very well  commented code with deeply analyses and explained results for technical user lacking an understanding
 
 
+   
+
+# Work with data
+
+### Data Collection
+
+* We used various skills learned in a bootcamp and various sources of date to collect information: data collected from CSV files, APIs, or databases by using Python or a Python library
+* Source of data: 
+* Imported data from a CSV file into a Pandas DataFrame.
+* API calls: 
+
+
+### Cleanup & Analyse
+
+
+### Data visualization 
+* The next step was to dive a bit more deeply into that data through visualizations.
+* Some sets of data to analyses use a simple plot function, but for others included longer time period and overlaying data we included interactive visualizations to explore and uncover relationships and patterns in your data
+
+### Results and summary of the analysis
 
 
 
 
+
+
+## Technical requirements 
+
+### Software Version Control (10 points)
+- Repository [ML_Algo_Options_Trading](https://github.com/JonahLeggett/ML_Algo_Options_Trading.git) was created on GitHub.
+
+-Our team made sure files were frequently committed to repository. 
+
+- Commit messages with appropriate level of detail included with each commit. Moreover you can find well  commented code in our Jypyter Notebook with deeply analyses and explained results for technical user lacking an understanding
+
+- Repository organized, and relevant information and project files included. 
+
+## Data Collection and Preparation (10 points)
+-----------------Data collected from CSV files, APIs, or databases by using Python or a Python library. (5 points)
+
+-----------------Data cleaned and prepared for the application or analysis by using Python or a Python library. (5 points)
+
+### Libraries / interfaces
+
+*  Pandas - is a software library designed for data analytics that makes it easier to work with data from practically any type of file. Pandas supplies powerful tools for working with time data in particular, and time is a key aspect of financial analysis. Analysts typically compare and measure financial assets—from single stocks to large portfolios—across time.
+* With the combination of Pandas and Jupyter Notebook, you can efficiently import, prepare, and analyze data of any type or quantity.
+* We created a Google Collab group to take advantage of the speed and convinience of collaborative cloud enviroment.
+* Following libraries were used to analyze the data 
+
+```
+# Import the required libraries and dependencies
+
+
+```
+❗ We used new libriry not covered in our course 
+ 
+
+------------------
+
+## Machine Learning (40 points)
+Jupyter notebook and Google Colab used to prepare training and testing datasets. 
+
+--------------------Following machine learning models created. (5 points)
+
+
+
+--------------------We fit models to the training data. (5 points)
+
+--------------------Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points)
+
+--------------------Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points)
+
+--------------------PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points)
+
+--------------------One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points)
+
+## Documentation 
+
+* You can find Code in Jupyter Notebook is well commented with concise, relevant notes. 
+
+* GitHub README.md file includes a concise project overview. We followed step by step [Technical requirements](https://courses.bootcampspot.com/courses/740/pages/16-dot-16-dot-5-technical-requirements?module_item_id=194212) for grading team convinience.
+
+* GitHub README.md file includes detailed usage and installation instructions [How to install]()
+* GitHub README.md file includes examples of the application AND the results and [summary of the analysis]() 
+
+
+## Next Steps
+ ---------------- Our ambitious project is not fully shaped. Potentially, next steps for the project would be.
+
+----------------  Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
 
 ### How to install
 
-* Save remote repo from GitHub to your computer (Desktop): in Terninal type:
+* Save remote repo from GitHub to your computer (Desktop): 
+in Terminal type:
 
 ```
 cd desktop
@@ -187,7 +195,7 @@ cd desktop
 git clone https://github.com/
 ```
 
-now you can find repo on your desktop
+Now you can find repo on your desktop
 
 
 * Open a Jupyter Lab: In Terminal type command
@@ -204,24 +212,7 @@ jupyter lab
 
 
 
-## Work with data
 
-### Data Collection
-
-* We used various skills learned in a bootcamp and various sources of date to collect information: data collected from CSV files, APIs, or databases by using Python or a Python library
-* Source of data: 
-* Imported data from a CSV file into a Pandas DataFrame.
-* API calls: 
-
-
-### Cleanup & Analyse
-
-* 
-### Data visualization 
-* The next step was to dive a bit more deeply into that data through visualizations.
-* Some sets of data to analyses use a simple plot function, but for others included longer time period and overlaying data we included interactive visualizations to explore and uncover relationships and patterns in your data
-
-### Results and summary of the analysis
 
 
 
