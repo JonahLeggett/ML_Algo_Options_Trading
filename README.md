@@ -1,4 +1,4 @@
- ## Mashine Learning Algorithm for Options Trading
+ ## Machine Learning Algorithm for Options Trading
  
  
 <img width="848" alt="Screen Shot 2021-07-07 at 6 32 48 PM" src="https://user-images.githubusercontent.com/80833988/124848463-bcee2200-df51-11eb-886d-85228b6cbc85.png">
@@ -16,7 +16,7 @@ were traded in the US.
 
 
 
-📌 In this Project, we assumed the role of a quantitative analyst for using a FinTech investing platform. This platform aims to offer investor sophisticated Options Trading mechanism. Using Mashine Learning to evaluate our trading algorithm written in Python we strive to remove unsertanty and a human factor to automate Options investment desicion making.
+📌 In this Project, we assumed the role of a quantitative analyst for using a FinTech investing platform. This platform aims to offer investor sophisticated Options Trading mechanism. Using Machine Learning to evaluate our trading algorithm written in Python we strive to remove uncertainty and a human factor to automate Options investment decision making.
 
 
 
@@ -35,29 +35,64 @@ were traded in the US.
 An executive summary of the project and project goals. (5 points)
 ## An executive summary
 
-*For out second project we decided to take challenging, but most rewarding approach.
-We are working on our passion project.
+> " For out second project we decided to take challenging, but most rewarding approach - to work on our passion project.
+"
 
 
---------------------Explain how this project relates to fintech and machine learning.
+### How this project relates to fintech and machine learning?
 
-We decided to use the power of Python and machine learning  to build a sophisticated algorithmic trading bot. 
-Specifically, we would like to in depth explore option trading 
+We decided to use the power of Python, machine learning and neural network to build a sophisticated algorithmic trading bot. 
+Specifically, we would like to in depth explore stock options trading 
 
 “Option contracts are a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security before expiration date…..
- Because of the huge diversity of historical options data and their relatively few applications, no open source dataset exists."
-￼
+Because of the huge diversity of historical options data and their relatively few applications, no open source dataset exists."
 
---------------------The selected model. (5 points)
 
---------------------Describe the machine learning model that your group selected and why.
-The data preparation and model training process. (3 points)
+### Machine learning model.
+
+###### Polynomial Regression
+We are using a polynomial regression  machine learning model, because its better than a linear model at predicting complex data we are working on
+
+[
+<img width="476" alt="Screen Shot 2021-07-12 at 6 28 21 PM" src="https://user-images.githubusercontent.com/80833988/125376480-ee932e80-e33f-11eb-87c3-eb5f49720261.png">
+](url)
+
+
+-
+
+Keras 
+Tensor Flow 
+and NN models
+to predict the price of the stock
+
+
+### The data preparation and model training process
+
+
 
 --------------------Describe the source of your data and why you chose it for your project.
 
+
+
 --------------------Describe the collection, cleanup, and preparation process.
 
+Yahoo-option chains
+Alpaca - stock data
+[Sentiment investor](https://sentimentinvestor.com/)
+ reason- sentiment social media
+ 
 --------------------Describe the training process.
+
+we train models 
+
+tech indicators
+
+moving  SMA RSI CCI
+MACD
+
+fundamental indicator -sentiment analy
+
+
 
 --------------------The approach that your group took to achieve the project goals. (5 points)
 
@@ -70,7 +105,27 @@ The data preparation and model training process. (3 points)
 
 --------------------Describe the techniques that you used to evaluate the performance of the model.
 
+
+
+
 --------------------Discuss any unanticipated insights or problems that arose and how you resolved them.
+
+2. Difficulty in pricing options 
+ forecasting 
+ -
+ resolution - we changed the strategy
+ instead
+ we forecasting stock performance not options pricing
+ it price closely 
+ look into stock closing price to make a call
+ 
+ 
+4. How do we convert sentiment analyses
+Converting data into a single data frame - formats
+working through data
+res
+new data sources thought alpaca  need to find other sources
+
 
 --------------------The results and conclusions from the machine learning model or application. (5 points)
 
@@ -78,11 +133,23 @@ The data preparation and model training process. (3 points)
 
 --------------------If the project goal wasn’t achieved, share the issues and what the group tried for resolving them.
 
+Our goal has change
+Automatically placed orders
+we want to use paper accounts 
+so we cant do it
+
 --------------------Next steps. (2 points)
+
+do it in a payed 
+
 
 --------------------Take a moment to discuss the potential next steps for the project.
 
---------------------Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
+--------------------Discuss any additional questions that you’d explore if you had more time.
+
+AWS bot 
+
+--------------------Specifically, if you had additional weeks to work on your project, what would you research next?
 
 
 ### Project overview.
@@ -90,7 +157,7 @@ The data preparation and model training process. (3 points)
 
 ### What is special about out project?
 
-* Very well  commented code with deeply analyses and explained results for technical user lacking an understanding
+* Very well  commented code with deeply analyses and explained results for user lacking technical  understanding
 
 
    
@@ -110,7 +177,7 @@ The data preparation and model training process. (3 points)
 
 ### Data visualization 
 * The next step was to dive a bit more deeply into that data through visualizations.
-* Some sets of data to analyses use a simple plot function, but for others included longer time period and overlaying data we included interactive visualizations to explore and uncover relationships and patterns in your data
+* hvplot library used to creat interactive plot
 
 ### Results and summary of the analysis
 
@@ -121,14 +188,15 @@ The data preparation and model training process. (3 points)
 
 ## Technical requirements 
 
-### Software Version Control (10 points)
+### Software Version Control 
+
 - Repository [ML_Algo_Options_Trading](https://github.com/JonahLeggett/ML_Algo_Options_Trading.git) was created on GitHub.
 
--Our team made sure files were frequently committed to repository. 
+- Our team made sure files were frequently committed to repository. 
 
-- Commit messages with appropriate level of detail included with each commit. Moreover you can find well  commented code in our Jypyter Notebook with deeply analyses and explained results for technical user lacking an understanding
+- Commit messages with appropriate level of detail included with each commit. Moreover you can find well  commented code in our Jypyter Notebook with analyses and explained results for user lacking a technical understanding
 
-- Repository organized, and relevant information and project files included. 
+- Repository organized, relevant information about the project files included. 
 
 ## Data Collection and Preparation (10 points)
 -----------------Data collected from CSV files, APIs, or databases by using Python or a Python library. (5 points)
@@ -139,18 +207,29 @@ The data preparation and model training process. (3 points)
 
 *  Pandas - is a software library designed for data analytics that makes it easier to work with data from practically any type of file. Pandas supplies powerful tools for working with time data in particular, and time is a key aspect of financial analysis. Analysts typically compare and measure financial assets—from single stocks to large portfolios—across time.
 * With the combination of Pandas and Jupyter Notebook, you can efficiently import, prepare, and analyze data of any type or quantity.
-* We created a Google Collab group to take advantage of the speed and convinience of collaborative cloud enviroment.
+* We created a Google Collab group to take advantage of the speed and convenience of collaborative cloud environment.
 * Following libraries were used to analyze the data 
 
-```
-# Import the required libraries and dependencies
+[
+<img width="579" alt="Screen Shot 2021-07-12 at 5 18 15 PM" src="https://user-images.githubusercontent.com/80833988/125371228-26e13f80-e335-11eb-8c5a-007e3c28ffd1.png">
+](url)
 
 
-```
-❗ We used new libriry not covered in our course 
- 
 
-------------------
+
+🆕 We used following new libraries not covered in Bootcamp course 
+
+<img width="430" alt="Screen Shot 2021-07-12 at 5 12 49 PM" src="https://user-images.githubusercontent.com/80833988/125370894-66f3f280-e334-11eb-9602-2b8212f68037.png">
+
+
+
+〰️ yfinance is a popular open source library developed by Ran Aroussi as a means to access the financial data available on Yahoo Finance.
+Yahoo Finance offers arange of market data on stocks, bonds etc. It also offers market news, reports and analysis and additionally options and fundamentals data- setting it apart from some of it’s competitors
+
+〰️ FinTA (Financial Technical Analysis) supports over 80 trading indicators.
+
+
+
 
 ## Machine Learning (40 points)
 Jupyter notebook and Google Colab used to prepare training and testing datasets. 
@@ -173,7 +252,7 @@ Jupyter notebook and Google Colab used to prepare training and testing datasets.
 
 * You can find Code in Jupyter Notebook is well commented with concise, relevant notes. 
 
-* GitHub README.md file includes a concise project overview. We followed step by step [Technical requirements](https://courses.bootcampspot.com/courses/740/pages/16-dot-16-dot-5-technical-requirements?module_item_id=194212) for grading team convinience.
+* GitHub README.md file includes a concise project overview. We followed step by step [Technical requirements](https://courses.bootcampspot.com/courses/740/pages/16-dot-16-dot-5-technical-requirements?module_item_id=194212) for grading team convenience.
 
 * GitHub README.md file includes detailed usage and installation instructions [How to install]()
 * GitHub README.md file includes examples of the application AND the results and [summary of the analysis]() 
