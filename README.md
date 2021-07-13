@@ -51,14 +51,18 @@ Because of the huge diversity of historical options data and their relatively fe
 ### Machine learning model.
 
 ###### Polynomial Regression
+
 We are using a polynomial regression  machine learning model, because its better than a linear model at predicting complex data we are working on
+
+>" Polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x. ... For this reason, polynomial regression is considered to be a special case of multiple linear regression
+>"
 
 [
 <img width="476" alt="Screen Shot 2021-07-12 at 6 28 21 PM" src="https://user-images.githubusercontent.com/80833988/125376480-ee932e80-e33f-11eb-87c3-eb5f49720261.png">
 ](url)
 
 
--
+
 
 Keras 
 Tensor Flow 
@@ -265,6 +269,8 @@ Jupyter notebook and Google Colab used to prepare training and testing datasets.
 
 ### How to install
 
+##### Repository
+
 * Save remote repo from GitHub to your computer (Desktop): 
 in Terminal type:
 
@@ -287,12 +293,22 @@ jupyter lab
 * Choose [ .ipynb ] file to see the analysis report.
 
 
+##### Alpaca API call
 
+In order to succesfully run the file you have to generate your own Alpaca key and save it to .env file. Those files are hidden so Hold down the Command, Shift and Period keys (for Mac) to be sure you have it in the same folder as Jupyter Lab notebook
 
+```
+ cmd + shift + [.]
+```
+To generate Alpaca key you have to create your own account and request a new key. Save it in .env file, make sure to name the variables ALPACA_API_KEY and ALPACA_SECRET_KEY 
+```
 
+ALPACA_API_KEY = '<your key>'
+ALPACA_SECRET_KEY = '<your key>'
 
+```
 
-
+Those steps are nessesary to maintain a security of private information. 
 
 
 
