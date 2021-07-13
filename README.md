@@ -30,9 +30,6 @@ were traded in the US.
 
 
 
-## Presentation (25 points)
-
-An executive summary of the project and project goals. (5 points)
 ## An executive summary
 
 > " For out second project we decided to take challenging, but most rewarding approach - to work on our passion project.
@@ -48,7 +45,24 @@ Specifically, we would like to in depth explore stock options trading
 Because of the huge diversity of historical options data and their relatively few applications, no open source dataset exists."
 
 
+
+
 ### Machine learning model.
+
+
+--------------------Following machine learning models created. (5 points)
+
+
+
+--------------------We fit models to the training data. (5 points)
+
+--------------------Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points)
+
+--------------------Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points)
+
+--------------------PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points)
+
+--------------------One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points)
 
 ###### Polynomial Regression
 
@@ -72,19 +86,37 @@ to predict the price of the stock
 
 ### The data preparation and model training process
 
+##### Data Collection, cleanup, and preparation
+Finding data : Alpaca -some data 
+
+QuantConnect-didnt work
+Finviz
 
 
+json data frame construction
+
+created empty data frame
+there was no index for a json responce
+
+sa_df
+
+
+- Data types- json and different
+- 
 --------------------Describe the source of your data and why you chose it for your project.
-
-
-
---------------------Describe the collection, cleanup, and preparation process.
-
 Yahoo-option chains
 Alpaca - stock data
 [Sentiment investor](https://sentimentinvestor.com/)
  reason- sentiment social media
  
+ json 
+ convert timestamps
+ 
+
+
+
+
+
 --------------------Describe the training process.
 
 we train models 
@@ -166,22 +198,6 @@ AWS bot
 
    
 
-# Work with data
-
-### Data Collection
-
-* We used various skills learned in a bootcamp and various sources of date to collect information: data collected from CSV files, APIs, or databases by using Python or a Python library
-* Source of data: 
-* Imported data from a CSV file into a Pandas DataFrame.
-* API calls: 
-
-
-### Cleanup & Analyse
-
-
-### Data visualization 
-* The next step was to dive a bit more deeply into that data through visualizations.
-* hvplot library used to creat interactive plot
 
 ### Results and summary of the analysis
 
@@ -193,6 +209,7 @@ AWS bot
 ## Technical requirements 
 
 ### Software Version Control 
+- Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaniusly work on code and make a changes in real time.
 
 - Repository [ML_Algo_Options_Trading](https://github.com/JonahLeggett/ML_Algo_Options_Trading.git) was created on GitHub.
 
@@ -233,24 +250,6 @@ Yahoo Finance offers arange of market data on stocks, bonds etc. It also offers 
 〰️ FinTA (Financial Technical Analysis) supports over 80 trading indicators.
 
 
-
-
-## Machine Learning (40 points)
-Jupyter notebook and Google Colab used to prepare training and testing datasets. 
-
---------------------Following machine learning models created. (5 points)
-
-
-
---------------------We fit models to the training data. (5 points)
-
---------------------Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points)
-
---------------------Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points)
-
---------------------PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points)
-
---------------------One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points)
 
 ## Documentation 
 
