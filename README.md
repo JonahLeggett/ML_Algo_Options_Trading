@@ -10,14 +10,7 @@ were traded in the US.
 
 
 
-
-
-
-
-
-
 📌 In this Project, we assumed the role of a quantitative analyst for using a FinTech investing platform. This platform aims to offer investor sophisticated Options Trading mechanism. Using Machine Learning to evaluate our trading algorithm written in Python we strive to remove uncertainty and a human factor to automate Options investment decision making.
-
 
 
 
@@ -26,6 +19,17 @@ were traded in the US.
     - [Overview of the project and project goals]()
 
 
+## An executive summary
+
+> " For out second project we decided to take challenging, but most rewarding approach - to work on our passion project.
+"
+##### How this project relates to fintech and machine learning?
+
+We decided to use the power of Python, machine learning and neural network to build a sophisticated algorithmic trading bot. 
+Specifically, we would like to in depth explore stock options trading 
+
+>“Option contracts are a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security before expiration date…..
+Because of the huge diversity of historical options data and their relatively few applications, no open source dataset exists."
 
 
 
@@ -43,9 +47,9 @@ were traded in the US.
 
 
 
-Data Collection and Preparation (10 points)
-* Data collected from CSV files, APIs, or databases by using Python or a Python library. (5 points) 
-* Data cleaned and prepared for the application or analysis by using Python or a Python library. (5 points) 
+## Data Collection and Preparation (10 points)
+
+* API calls from multiple sourses, working on multiple databases by using Python and Python library. 
 
 #### Libraries 
 
@@ -78,15 +82,13 @@ Get high quality, granular data, on what people are saying on various social pla
 
 
 
-
-
 ## Machine Learning (40 points)
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
-* One or more machine learning models created. (5 points)
+* We created ....... mashine learning models
 
 ##### Linear and Polynomial Regression
 
-We are using both linear and polynomial regression  machine learning model, depends on what kind of prediction we are trying to make.
+We are using both linear and polynomial regression  machine learning models, depends on what kind of prediction we are trying to make and the occuring trend.
 
 
 <img width="463" alt="Screen Shot 2021-07-13 at 6 51 19 PM" src="https://user-images.githubusercontent.com/80833988/125547952-636a2a91-d547-49ad-8885-fc09328423bc.png">
@@ -118,17 +120,6 @@ Polynomial regression is a form of regression analysis in which the relationship
 
 ### Presentation 
 
-## An executive summary
-
-> " For out second project we decided to take challenging, but most rewarding approach - to work on our passion project.
-"
-##### How this project relates to fintech and machine learning?
-
-We decided to use the power of Python, machine learning and neural network to build a sophisticated algorithmic trading bot. 
-Specifically, we would like to in depth explore stock options trading 
-
->“Option contracts are a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security before expiration date…..
-Because of the huge diversity of historical options data and their relatively few applications, no open source dataset exists."
 
 
 * The selected model. (5 points)
@@ -159,37 +150,29 @@ fundamental indicator -sentiment analy
 * The approach that your group took to achieve the project goals. (5 points)
     * Include any relevant code or demonstrations of the machine learning model. 
     * Describe the techniques that you used to evaluate the performance of the model. 
-    * Discuss any unanticipated insights or problems that arose and how you resolved them.
+>" Discuss any unanticipated insights or problems that arose and how you resolved them."
 
-1. Finding data:
- Alpaca -some data 
- QuantConnect-didnt work
-Finviz
+1. Finding data. 
+ main problem we encounter was finding the data. The original source we planned to use - Alpaca - worked for some data. But we needed to find some alternative sourses of data. Some of the ones we tried, like [QuantConnect](https://www.quantconnect.com) - didnt work. After trial and error we end up using [following libriries]()
+
 
 2. Unifying the data
 
-Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some daga frames together 
+Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some data frames together. It took a lot of time and creative solutions, but we were able to do it.
 
 
 3. Difficulty in pricing options 
- Very hard to put  into code a process of forecasting option contract prices. Our solution was to changed the strategy. Instead we are forecasting stock prices. Because stock price directly correlates with option contracts price change we can use machine learning strategies we developeped to make a desision to buy or sell stock
+
+ Very hard to put  into code a process of forecasting option contract prices. Our solution was to changed the strategy. Instead we are forecasting stock prices. Because stock price directly correlates with option contracts price change we can use machine learning strategies we developeped to make a desision to buy or sell stock.
  
- 4. Choosing iindicators and incorporating them into code
+ 4. Choosing iindicators and incorporating them into code.
+  Technical Indicator is essentially a mathematical representation based on data sets to forecast price trends. Choosing the right set of indicators was another challange. We end up using:
+  -------------------------
  
  5. How do we convert sentiment analyses?
 Another challenge was to convert data for [sentiment analyses](https://sentimentinvestor.com/) into a single data frame and working through that data
 
-
-
-
-
-Our goal has change
-Automatically placed orders
-we want to use paper accounts 
-so we cant do it
-
-
-7. buy column 
+6. Create and fill up "buy/sell" column 
 
 
 
@@ -197,9 +180,19 @@ so we cant do it
 * The results and conclusions from the machine learning model or application. (5 points)
     * Include relevant images or examples to support your work. 
     * If the project goal wasn’t achieved, share the issues and what the group tried for resolving them. 
+
+
+
 * Next steps. (2 points)
     * Take a moment to discuss the potential next steps for the project. 
+
+Add more indicaters-or try different sets of indicators. 
+Use more data sourses
+
     * Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
+  
+1. Build a bot or some other interface to automatically placed orders or execute buy/sell in real time
+2. Link our paper accounts to the algorithm and ectually start executing our strategy
 
 
 
