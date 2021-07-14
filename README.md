@@ -15,8 +15,23 @@ were traded in the US.
 
 
 ## Table of content 📔
-- [An executive summary]()
-    - [Overview of the project and project goals]()
+- [An executive summary](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#an-executive-summary)
+    - [How this project relates to fintech and machine learning?](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#how-this-project-relates-to-fintech-and-machine-learning)
+- [Software Version Control](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#software-version-control)
+- [Data Collection and Preparation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#data-collection-and-preparation-10-points)
+    - [Libraries](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#libraries)
+- [Machine learning](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#machine-learning-40-points)
+- [Documentation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#documentation)
+- [Presentation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#presentation)
+    - []()
+    - []()
+    - []()
+    - []()
+- [How to install](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#how-to-install)
+- [Our team](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#team)
+- [Licence](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#license)
+- [Links](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#links)
+
 
 
 ## An executive summary
