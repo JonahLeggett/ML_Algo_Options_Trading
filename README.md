@@ -41,7 +41,7 @@ were traded in the US.
 We decided to use the power of Python, machine learning and neural network to build a sophisticated algorithmic trading bot. 
 Specifically, we would like to in depth explore stock options trading 
 
-“Option contracts are a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security before expiration date…..
+>“Option contracts are a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security before expiration date…..
 Because of the huge diversity of historical options data and their relatively few applications, no open source dataset exists."
 
 
@@ -71,9 +71,7 @@ We are using a polynomial regression  machine learning model, because its better
 >" Polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x. ... For this reason, polynomial regression is considered to be a special case of multiple linear regression
 >"
 
-[
-<img width="476" alt="Screen Shot 2021-07-12 at 6 28 21 PM" src="https://user-images.githubusercontent.com/80833988/125376480-ee932e80-e33f-11eb-87c3-eb5f49720261.png">
-](url)
+<img width="463" alt="Screen Shot 2021-07-13 at 6 51 19 PM" src="https://user-images.githubusercontent.com/80833988/125547952-636a2a91-d547-49ad-8885-fc09328423bc.png">
 
 
 
@@ -86,7 +84,12 @@ to predict the price of the stock
 
 ### The data preparation and model training process
 
-##### Data Collection, cleanup, and preparation
+## Data Collection, cleanup, and preparation
+## Data Collection and Preparation (10 points)
+-----------------Data collected from CSV files, APIs, or databases by using Python or a Python library. (5 points)
+
+-----------------Data cleaned and prepared for the application or analysis by using Python or a Python library. (5 points)
+
 Finding data : Alpaca -some data 
 
 QuantConnect-didnt work
@@ -187,19 +190,43 @@ AWS bot
 
 --------------------Specifically, if you had additional weeks to work on your project, what would you research next?
 
+### Libraries / interfaces
 
-### Project overview.
+*  Pandas - is a software library designed for data analytics that makes it easier to work with data from practically any type of file. Pandas supplies powerful tools for working with time data in particular, and time is a key aspect of financial analysis. Analysts typically compare and measure financial assets—from single stocks to large portfolios—across time.
+* With the combination of Pandas and Jupyter Notebook, you can efficiently import, prepare, and analyze data of any type or quantity.
+* We created a Google Collab group to take advantage of the speed and convenience of collaborative cloud environment.
+* Following libraries were used to analyze the data 
+
+[
+<img width="579" alt="Screen Shot 2021-07-12 at 5 18 15 PM" src="https://user-images.githubusercontent.com/80833988/125371228-26e13f80-e335-11eb-8c5a-007e3c28ffd1.png">
+](url)
 
 
-### What is special about out project?
-
-* Very well  commented code with deeply analyses and explained results for user lacking technical  understanding
 
 
-   
+🆕 We used following new libraries not covered in Bootcamp course 
+
+<img width="361" alt="Screen Shot 2021-07-13 at 6 53 33 PM" src="https://user-images.githubusercontent.com/80833988/125548152-09ff4209-0955-4c09-bb42-23c2e1f96a18.png">
+
+
+
+〰️ [yfinance](https://finance.yahoo.com/quotes/Historical,Option,DATA,Implied,Volatility,EOD/view/v1) is a popular open source library developed by Ran Aroussi as a means to access the financial data available on Yahoo Finance.
+Yahoo Finance offers arange of market data on stocks, bonds etc. It also offers market news, reports and analysis and additionally options and fundamentals data- setting it apart from some of it’s competitors
+
+〰️ FinTA (Financial Technical Analysis) supports over 80 trading indicators.
+
+〰️ [sentiment-investor](https://sentimentinvestor.com/) APIs for stock social media data
+Get high quality, granular data, on what people are saying on various social platforms about stocks and cryptocurrencies
+
 
 
 ### Results and summary of the analysis
+
+
+## Next Steps
+ ---------------- Our ambitious project is not fully shaped. Potentially, next steps for the project would be.
+
+----------------  Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
 
 
 
@@ -219,37 +246,6 @@ AWS bot
 
 - Repository organized, relevant information about the project files included. 
 
-## Data Collection and Preparation (10 points)
------------------Data collected from CSV files, APIs, or databases by using Python or a Python library. (5 points)
-
------------------Data cleaned and prepared for the application or analysis by using Python or a Python library. (5 points)
-
-### Libraries / interfaces
-
-*  Pandas - is a software library designed for data analytics that makes it easier to work with data from practically any type of file. Pandas supplies powerful tools for working with time data in particular, and time is a key aspect of financial analysis. Analysts typically compare and measure financial assets—from single stocks to large portfolios—across time.
-* With the combination of Pandas and Jupyter Notebook, you can efficiently import, prepare, and analyze data of any type or quantity.
-* We created a Google Collab group to take advantage of the speed and convenience of collaborative cloud environment.
-* Following libraries were used to analyze the data 
-
-[
-<img width="579" alt="Screen Shot 2021-07-12 at 5 18 15 PM" src="https://user-images.githubusercontent.com/80833988/125371228-26e13f80-e335-11eb-8c5a-007e3c28ffd1.png">
-](url)
-
-
-
-
-🆕 We used following new libraries not covered in Bootcamp course 
-
-<img width="430" alt="Screen Shot 2021-07-12 at 5 12 49 PM" src="https://user-images.githubusercontent.com/80833988/125370894-66f3f280-e334-11eb-9602-2b8212f68037.png">
-
-
-
-〰️ yfinance is a popular open source library developed by Ran Aroussi as a means to access the financial data available on Yahoo Finance.
-Yahoo Finance offers arange of market data on stocks, bonds etc. It also offers market news, reports and analysis and additionally options and fundamentals data- setting it apart from some of it’s competitors
-
-〰️ FinTA (Financial Technical Analysis) supports over 80 trading indicators.
-
-
 
 ## Documentation 
 
@@ -258,13 +254,9 @@ Yahoo Finance offers arange of market data on stocks, bonds etc. It also offers 
 * GitHub README.md file includes a concise project overview. We followed step by step [Technical requirements](https://courses.bootcampspot.com/courses/740/pages/16-dot-16-dot-5-technical-requirements?module_item_id=194212) for grading team convenience.
 
 * GitHub README.md file includes detailed usage and installation instructions [How to install]()
-* GitHub README.md file includes examples of the application AND the results and [summary of the analysis]() 
+* GitHub README.md file includes examples of the application AND the results and [Summary of the analysis]() 
 
 
-## Next Steps
- ---------------- Our ambitious project is not fully shaped. Potentially, next steps for the project would be.
-
-----------------  Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
 
 ### How to install
 
