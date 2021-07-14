@@ -81,17 +81,10 @@ Get high quality, granular data, on what people are saying on various social pla
 
 
 ## Machine Learning (40 points)
-* Jupyter notebook, Google Colab notebook, or Amazon SageMaker Studio notebook created to prepare training and testing datasets. (5 points) 
+* Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
 * One or more machine learning models created. (5 points)
-*  
-* Models fit to the training data. (5 points) 
-* Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points) 
-* Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points) 
-* PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points) 
-* One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points) 
 
-Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
-#### Linear and Polynomial Regression
+##### Linear and Polynomial Regression
 
 We are using both linear and polynomial regression  machine learning model, depends on what kind of prediction we are trying to make.
 
@@ -102,9 +95,17 @@ We are using both linear and polynomial regression  machine learning model, depe
 Polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y and considered to be a special case of multiple linear regression
 "
 
+* Models fit to the training data. (5 points) 
+* Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points) 
+* Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points) 
+* PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points) 
+* One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points) 
 
 
- 
+
+
+
+
 ## Documentation 
 
 * You can find Code in Jupyter Notebook is well commented with concise, relevant notes. 
@@ -159,34 +160,25 @@ fundamental indicator -sentiment analy
     * Include any relevant code or demonstrations of the machine learning model. 
     * Describe the techniques that you used to evaluate the performance of the model. 
     * Discuss any unanticipated insights or problems that arose and how you resolved them.
-Finding data : Alpaca -some data 
 
-QuantConnect-didnt work
+1. Finding data:
+ Alpaca -some data 
+ QuantConnect-didnt work
 Finviz
 
+2. Unifying the data
 
-json data frame construction
+Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some daga frames together 
 
-created empty data frame
-there was no index for a json response
 
-sa_df
-
-2. Difficulty in pricing options 
- forecasting 
- -
- resolution - we changed the strategy
- instead
- we forecasting stock performance not options pricing
- it price closely 
- look into stock closing price to make a call
+3. Difficulty in pricing options 
+ Very hard to put  into code a process of forecasting option contract prices. Our solution was to changed the strategy. Instead we are forecasting stock prices. Because stock price directly correlates with option contracts price change we can use machine learning strategies we developeped to make a desision to buy or sell stock
  
+ 4. Choosing iindicators and incorporating them into code
  
-4. How do we convert sentiment analyses
-Converting data into a single data frame - formats
-working through data
-res
-new data sources thought alpaca  need to find other sources
+ 5. How do we convert sentiment analyses?
+Another challenge was to convert data for [sentiment analyses](https://sentimentinvestor.com/) into a single data frame and working through that data
+
 
 
 
@@ -197,11 +189,9 @@ we want to use paper accounts
 so we cant do it
 
 
-5. sxource took a while
-6. setting iindicators and incorporating them into code
 7. buy column 
 
-Data types- json and different
+
 
 
 * The results and conclusions from the machine learning model or application. (5 points)
