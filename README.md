@@ -23,10 +23,11 @@ were traded in the US.
 - [Machine learning](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#machine-learning-40-points)
 - [Documentation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#documentation)
 - [Presentation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#presentation)
-    - []()
-    - []()
-    - []()
-    - []()
+    - [Machine Learning]()
+    - [Work with data]()
+    - [Results]()
+    - [Working on issues]()
+    - [Next Steps]()
 - [How to install](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#how-to-install)
 - [Our team](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#team)
 - [Licence](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#license)
@@ -120,9 +121,6 @@ Polynomial regression is a form of regression analysis in which the relationship
 
 
 
-
-
-
 ## Documentation 
 
 * You can find Code in Jupyter Notebook is well commented with concise, relevant notes. 
@@ -133,9 +131,9 @@ Polynomial regression is a form of regression analysis in which the relationship
 * GitHub README.md file includes examples of the application AND the results and [Summary of the analysis]() 
 
 
-### Presentation 
+## Presentation 
 
-
+### Machine Lerning model
 
 * The selected model. (5 points)
     * Describe the machine learning model that your group selected and why.
@@ -164,7 +162,9 @@ fundamental indicator -sentiment analy
  
 * The approach that your group took to achieve the project goals. (5 points)
     * Include any relevant code or demonstrations of the machine learning model. 
-    * Describe the techniques that you used to evaluate the performance of the model. 
+
+### Working on issues
+
 >" Discuss any unanticipated insights or problems that arose and how you resolved them."
 
 1. Finding data. 
@@ -197,8 +197,7 @@ Another challenge was to convert data for [sentiment analyses](https://sentiment
     * If the project goal wasn’t achieved, share the issues and what the group tried for resolving them. 
 
 
-
-* Next steps. (2 points)
+### Next steps. (2 points)
     * Take a moment to discuss the potential next steps for the project. 
 
 Add more indicaters-or try different sets of indicators. 
