@@ -291,9 +291,9 @@ MIT
 
 ## Links
 
-* [Jupyter Lab]
-* [Repository copy link]
-* [Presentation Prezi Website]
+* [CODE](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/MLAlgoOptionsTrading.ipynb)
+* [Repository copy link](https://github.com/JonahLeggett/ML_Algo_Options_Trading.git)
+* [Presentation Prezi Website](https://prezi.com/view/W5tupw5i0Ap6HAeHcCsT/)
 
 
 :star:
