@@ -198,23 +198,11 @@ Another challenge was to convert data for [sentiment analyses](https://sentiment
 ### Combined Strategy
 
 
+<img width="813" alt="Screen Shot 2021-07-15 at 12 33 44 PM" src="https://user-images.githubusercontent.com/80833988/125849108-a783f984-972b-47c6-a1e6-931225f8152f.png">
+
 ### Machine Lerning 
 
-* The selected model. (5 points)
-    * Describe the machine learning model that your group selected and why.
-
-
-    * Describe the training process.
- 
-we train models 
-
-
-
-
-
-* The results and conclusions from the machine learning model or application. 
-
-<img width="813" alt="Screen Shot 2021-07-15 at 12 33 44 PM" src="https://user-images.githubusercontent.com/80833988/125849108-a783f984-972b-47c6-a1e6-931225f8152f.png">
+<img width="1214" alt="Screen Shot 2021-07-15 at 2 47 06 PM" src="https://user-images.githubusercontent.com/80833988/125862140-88ef2689-c0d3-419e-abb9-df463bfd62dd.png">
 
 
 ### Working on issues
