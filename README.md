@@ -41,7 +41,7 @@ were traded in the US.
 "
 ##### How this project relates to fintech and machine learning?
 
-We decided to use the power of Python, machine learning and neural network to build a sophisticated algorithmic trading bot. 
+We are using the power of Python, machine learning and neural network to build a sophisticated algorithmic trading bot. 
 Specifically, we would like to in depth explore stock options trading 
 
 >“Option contracts are a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security before expiration date…..
@@ -65,7 +65,7 @@ Because of the huge diversity of historical options data and their relatively fe
 
 ## Data Collection and Preparation (10 points)
 
-* API calls from multiple sourses, working on multiple databases by using Python and Python library. 
+* API calls from multiple sourses, working on multiple databases created by using Python and Python library. 
 
 #### Libraries 
 
@@ -75,7 +75,7 @@ Because of the huge diversity of historical options data and their relatively fe
 * Following libraries were used to analyze the data 
 
 [
-<img width="579" alt="Screen Shot 2021-07-12 at 5 18 15 PM" src="https://user-images.githubusercontent.com/80833988/125371228-26e13f80-e335-11eb-8c5a-007e3c28ffd1.png">
+<img width="686" alt="Screen Shot 2021-07-14 at 7 31 39 PM" src="https://user-images.githubusercontent.com/80833988/125718772-f6bdf922-fdff-4b1d-87e3-f5a9dc2b2f63.png">
 ](url)
 
 
@@ -128,7 +128,7 @@ Polynomial regression is a form of regression analysis in which the relationship
 * GitHub README.md file includes a concise project overview. We followed step by step [Technical requirements](https://courses.bootcampspot.com/courses/740/pages/16-dot-16-dot-5-technical-requirements?module_item_id=194212) for grading team convenience.
 
 * GitHub README.md file includes detailed usage and installation instructions [How to install]()
-* GitHub README.md file includes examples of the application AND the results and [Summary of the analysis]() 
+* GitHub README.md file includes examples of the application AND the results with progected revenue.
 
 
 ## Presentation 
@@ -153,15 +153,20 @@ Alpaca - stock data
     * 
 we train models 
 
-tech indicators
+tech indicators: moving  MACD RSI CCI
 
-moving  SMA RSI CCI
-MACD
+
 
 fundamental indicator -sentiment analy
  
 * The approach that your group took to achieve the project goals. (5 points)
     * Include any relevant code or demonstrations of the machine learning model. 
+
+
+
+* The results and conclusions from the machine learning model or application. (5 points)
+    * Include relevant images or examples to support your work. 
+
 
 ### Working on issues
 
@@ -182,7 +187,7 @@ Some sourses return data in json format, which has different frame construction.
  
  4. Choosing iindicators and incorporating them into code.
   Technical Indicator is essentially a mathematical representation based on data sets to forecast price trends. Choosing the right set of indicators was another challange. We end up using:
-  -------------------------
+ ........................
  
  5. How do we convert sentiment analyses?
 Another challenge was to convert data for [sentiment analyses](https://sentimentinvestor.com/) into a single data frame and working through that data
@@ -192,21 +197,22 @@ Another challenge was to convert data for [sentiment analyses](https://sentiment
 
 
 
-* The results and conclusions from the machine learning model or application. (5 points)
-    * Include relevant images or examples to support your work. 
-    * If the project goal wasn’t achieved, share the issues and what the group tried for resolving them. 
 
 
 ### Next steps. (2 points)
-    * Take a moment to discuss the potential next steps for the project. 
-
-Add more indicaters-or try different sets of indicators. 
-Use more data sourses
-
-    * Discuss any additional questions that you’d explore if you had more time. Specifically, if you had additional weeks to work on your project, what would you research next?
-  
+  * Potential next steps for the project would be 
+1.Adding more indicators or trying different set of indicators
+2. Try the strategy on different stocks
+3. Incorporate Deep Learning Network 
+ 
+    * If we had more timewe would continue our research in following areas:
 1. Build a bot or some other interface to automatically placed orders or execute buy/sell in real time
-2. Link our paper accounts to the algorithm and ectually start executing our strategy
+2. Link real accounts to the algorithm and actually start executing our strategy
+3. Explore more complex trading strategies, like Iron Condor 
+4. 
+>"An iron condor is an options strategy consisting of two puts (one long and one short) and two calls (one long and one short), and four strike prices, all with the same expiration date. The iron condor earns the maximum profit when the underlying asset closes between the middle strike prices at expiration. In other words, the goal is to profit from low volatility in the underlying asset."
+
+
 
 
 
