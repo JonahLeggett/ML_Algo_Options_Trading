@@ -23,11 +23,6 @@ were traded in the US.
 - [Machine learning](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#machine-learning-40-points)
 - [Documentation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#documentation)
 - [Presentation](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#presentation)
-    - [Machine Learning]()
-    - [Work with data]()
-    - [Results]()
-    - [Working on issues]()
-    - [Next Steps]()
 - [How to install](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#how-to-install)
 - [Our team](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#team)
 - [Licence](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#license)
@@ -63,9 +58,11 @@ Because of the huge diversity of historical options data and their relatively fe
 
 
 
-## Data Collection and Preparation (
+## Data Collection and Preparation 
 
 * API calls from multiple sourses, working on different databases created by using Python and following Python libraries. 
+
+<img width="767" alt="Screen Shot 2021-07-15 at 10 57 50 AM" src="https://user-images.githubusercontent.com/80833988/125835128-09f829cf-16a4-4b23-a205-56fb1b2ea2d0.png">
 
 #### Libraries 
 
@@ -101,21 +98,35 @@ Get high quality, granular data, on what people are saying on various social pla
 
 ## Machine Learning (40 points)
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
-* We created ....... mashine learning models
+* We created 2 mashine learning models: 
+   * SVC model (Support Vector Classification) 
+   * LR model(Multinomial Logistic Regression) - new machine learning library, machine learning model that the class hasn't already covered
 
 ##### Linear Regression
 
 >"Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
 "
-[
-<img width="576" alt="Screen Shot 2021-07-14 at 10 04 21 PM" src="https://user-images.githubusercontent.com/80833988/125731659-7cc1482a-2c9c-4b4b-b969-3677d579067a.png">
-](url)
 
-* Models fit to the training data. (5 points) 
-* Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points) 
-* Predictions shown by using a sample of new data. Predictions compared if more than one model was used. (3 points) 
-* PNG images of your visualizations saved to distribute to the class and instructional team and to include in your presentation and the README.md file for your repo. (2 points) 
-* One new machine learning library, machine learning model, or evaluation metric used that the class hasn't already covered. (10 points) 
+<img width="576" alt="Screen Shot 2021-07-14 at 10 04 21 PM" src="https://user-images.githubusercontent.com/80833988/125731659-7cc1482a-2c9c-4b4b-b969-3677d579067a.png">
+
+##### Multinomial Logistic Regression
+
+>"Multinomial Logistic Regression is a statistical test used to predict a single categorical variable using one or more other variables. It also is used to determine the numerical relationship between such sets of variables."
+
+<img width="264" alt="Screen Shot 2021-07-15 at 11 45 53 AM" src="https://user-images.githubusercontent.com/80833988/125840928-4b17f8f3-b82c-48da-a217-82d0cd1265c9.png">
+
+* Models fit to the training data. 
+
+<img width="695" alt="Screen Shot 2021-07-15 at 11 34 42 AM" src="https://user-images.githubusercontent.com/80833988/125839625-3768e99b-269e-4244-8599-83ecf58c5645.png">
+
+* Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. 
+
+<img width="576" alt="Screen Shot 2021-07-15 at 11 32 24 AM" src="https://user-images.githubusercontent.com/80833988/125839344-0c54bb57-d3f8-40cf-a0f2-7e37267eadeb.png">
+
+
+* Predictions shown by using a sample of new data. Predictions compared 
+
+<img width="602" alt="Screen Shot 2021-07-15 at 11 35 17 AM" src="https://user-images.githubusercontent.com/80833988/125839697-ad440f6d-f5e9-48a5-9763-816e749fe79a.png">
 
 
 
@@ -131,39 +142,63 @@ Get high quality, granular data, on what people are saying on various social pla
 
 ## Presentation 
 
-### Machine Lerning model
+<img width="1001" alt="Screen Shot 2021-07-15 at 12 48 03 PM" src="https://user-images.githubusercontent.com/80833988/125848526-be01eb85-377b-49c1-bbc0-a58ce6e47d25.png">
+
+### Project overview
+
+<img width="872" alt="Screen Shot 2021-07-15 at 10 55 06 AM" src="https://user-images.githubusercontent.com/80833988/125834755-ecba15cb-c67c-47c9-b575-84818c2095fc.png">
+
+### Work with data
+
+* The data preparation and model training process. 
+    * Source of data 
+    
+     The main difficulty we encountered was finding the data. The original source we planned to use - Alpaca - worked for some data. But we needed to find some alternative sourses of data. Some of the ones we tried, like [QuantConnect](https://www.quantconnect.com) - didnt work. After trial and error we end up using following libriries
+
+<img width="969" alt="Screen Shot 2021-07-15 at 11 50 09 AM" src="https://user-images.githubusercontent.com/80833988/125841460-cb6d6369-070e-492c-bac5-c70585523c51.png">
+    * Collection, cleanup, and preparation process:
+Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some data frames together. It took a lot of time and creative solutions, but we were able to do it.
+
+<img width="776" alt="Screen Shot 2021-07-15 at 1 01 55 PM" src="https://user-images.githubusercontent.com/80833988/125850187-7fb9109b-55e0-4aaf-a48c-30ec0022fbbd.png">
+
+##### The following concatenated dataframe includes all indicators, as well as opening and closing prices.
+
+<img width="1504" alt="Screen Shot 2021-07-15 at 12 56 41 PM" src="https://user-images.githubusercontent.com/80833988/125849516-08477319-c588-4b10-859a-0153e6831f35.png">
+
+
+### Technical Analysis
+
+ * We used yfinance to get ohlcav data from yahoo finance for a period of time
+ * Using the ohlcav and finta data we built 3 technical indicators: RSI , CCI and MACD
+   * RSI 
+   * CCI
+   * MACD
+ * Using the indicators we added a signal column to indicate when we should buy a call or sell our call
+
+
+### Sentiment Analysis
+
+<img width="957" alt="Screen Shot 2021-07-15 at 12 23 45 PM" src="https://user-images.githubusercontent.com/80833988/125845717-4cde782e-3553-40b5-af03-358c04376a9c.png">
+
+### Combined Strategy
+
+### Machine Lerning 
 
 * The selected model. (5 points)
     * Describe the machine learning model that your group selected and why.
-* The data preparation and model training process. (3 points)
-    * Describe the source of your data and why you chose it for your project. 
-Yahoo-option chains
-Alpaca - stock data
-[Sentiment investor](https://sentimentinvestor.com/)
- reason- sentiment social media
- 
- json 
- convert timestamps
- 
 
-    * Describe the collection, cleanup, and preparation process. 
+
     * Describe the training process.
-    * 
+ 
 we train models 
 
 tech indicators: moving  MACD RSI CCI
 
 
 
-fundamental indicator -sentiment analy
- 
-* The approach that your group took to achieve the project goals. (5 points)
-    * Include any relevant code or demonstrations of the machine learning model. 
+* The results and conclusions from the machine learning model or application. 
 
-
-
-* The results and conclusions from the machine learning model or application. (5 points)
-    * Include relevant images or examples to support your work. 
+<img width="813" alt="Screen Shot 2021-07-15 at 12 33 44 PM" src="https://user-images.githubusercontent.com/80833988/125849108-a783f984-972b-47c6-a1e6-931225f8152f.png">
 
 
 ### Working on issues
@@ -171,12 +206,8 @@ fundamental indicator -sentiment analy
 >" Discuss any unanticipated insights or problems that arose and how you resolved them."
 
 1. Finding data. 
- main problem we encounter was finding the data. The original source we planned to use - Alpaca - worked for some data. But we needed to find some alternative sourses of data. Some of the ones we tried, like [QuantConnect](https://www.quantconnect.com) - didnt work. After trial and error we end up using [following libriries]()
-
 
 2. Unifying the data
-
-Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some data frames together. It took a lot of time and creative solutions, but we were able to do it.
 
 
 3. Difficulty in pricing options 
@@ -209,21 +240,6 @@ Another challenge was to convert data for [sentiment analyses](https://sentiment
     * Explore more complex trading strategies, like Iron Condor 
 
 >"An iron condor is an options strategy consisting of two puts (one long and one short) and two calls (one long and one short), and four strike prices, all with the same expiration date. The iron condor earns the maximum profit when the underlying asset closes between the middle strike prices at expiration. In other words, the goal is to profit from low volatility in the underlying asset."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -281,10 +297,10 @@ Those steps are nessesary to maintain a security of private information.
 ## Team
 📩 [Natalia Burrey](https://github.com/nataliaburrey)
 📩 [Jonah Leggett](https://github.com/JonahLeggett)
-📩 [Miguel Ortega]()
-📩[Samuel Yang]()
+📩 [Miguel Ortega](https://github.com/Miggs00)
+📩 [Samuel Yang](https://github.com/samjinyang)
 
-
+<img width="1263" alt="Screen Shot 2021-07-15 at 10 52 49 AM" src="https://user-images.githubusercontent.com/80833988/125834406-7c8ce5a6-1823-478c-9073-7fe222ea2786.png">
 
 
 
@@ -294,7 +310,6 @@ MIT
 
 ## Links
 
-* [Resourses]
 * [Jupyter Lab]
 * [Repository copy link]
 * [Presentation Prezi Website]
