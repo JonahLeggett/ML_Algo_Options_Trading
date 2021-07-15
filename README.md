@@ -99,6 +99,7 @@ Get high quality, granular data, on what people are saying on various social pla
 ## Machine Learning 
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
 * We created 2 mashine learning models: 
+
    1. SVC model (Support Vector Classification) 
 >" Support-vector machines are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis"
 
