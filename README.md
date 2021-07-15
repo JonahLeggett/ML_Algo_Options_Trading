@@ -99,17 +99,12 @@ Get high quality, granular data, on what people are saying on various social pla
 ## Machine Learning 
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
 * We created 2 mashine learning models: 
-   * SVC model (Support Vector Classification) 
-   * LR model(Multinomial Logistic Regression) - new machine learning library, machine learning model that the class hasn't already covered
+   1. SVC model (Support Vector Classification) 
+>" Support-vector machines are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis"
 
-##### Linear Regression
+<img width="394" alt="Screen Shot 2021-07-15 at 2 22 19 PM" src="https://user-images.githubusercontent.com/80833988/125859439-a95b5fea-6f68-4b3d-a015-ebe0e610f3f9.png">
 
->"Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
-"
-
-<img width="576" alt="Screen Shot 2021-07-14 at 10 04 21 PM" src="https://user-images.githubusercontent.com/80833988/125731659-7cc1482a-2c9c-4b4b-b969-3677d579067a.png">
-
-##### Multinomial Logistic Regression
+   2. LR model(Multinomial Logistic Regression) - new machine learning model that the class hasn't already covered
 
 >"Multinomial Logistic Regression is a statistical test used to predict a single categorical variable using one or more other variables. It also is used to determine the numerical relationship between such sets of variables."
 
@@ -128,7 +123,11 @@ Get high quality, granular data, on what people are saying on various social pla
 
 <img width="602" alt="Screen Shot 2021-07-15 at 11 35 17 AM" src="https://user-images.githubusercontent.com/80833988/125839697-ad440f6d-f5e9-48a5-9763-816e749fe79a.png">
 
+* We created a paper trade account on [TD AmeriTrade](https://www.tdameritrade.com/) and chose Multinomial Logistic Regression (lr_predicted_signals) as it perfomed better, to make a decision to call or put
 
+[
+<img width="1134" alt="Screen Shot 2021-07-14 at 8 09 19 PM" src="https://user-images.githubusercontent.com/80833988/125853138-d9a75fa0-a782-42da-a26a-f7f701556d68.png">
+](url)
 
 # Documentation 
 
@@ -136,7 +135,7 @@ Get high quality, granular data, on what people are saying on various social pla
 
 * GitHub README.md file includes a concise project overview. We followed step by step [Technical requirements](https://courses.bootcampspot.com/courses/740/pages/16-dot-16-dot-5-technical-requirements?module_item_id=194212) for grading team convenience.
 
-* GitHub README.md file includes detailed usage and installation instructions [How to install]()
+* GitHub README.md file includes detailed usage and installation instructions [How to install](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/README.md#how-to-install)
 * GitHub README.md file includes examples of the application AND the results with progected revenue.
 
 
@@ -151,14 +150,24 @@ Get high quality, granular data, on what people are saying on various social pla
 
 ### Work with data
 
-* The data preparation and model training process. 
-    * Source of data 
+ 
+  * Source of data 
     
      The main difficulty we encountered was finding the data. The original source we planned to use - Alpaca - worked for some data. But we needed to find some alternative sourses of data. Some of the ones we tried, like [QuantConnect](https://www.quantconnect.com) - didnt work. After trial and error we end up using following libriries
 
 <img width="969" alt="Screen Shot 2021-07-15 at 11 50 09 AM" src="https://user-images.githubusercontent.com/80833988/125841460-cb6d6369-070e-492c-bac5-c70585523c51.png">
-    * Collection, cleanup, and preparation process:
-Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some data frames together. It took a lot of time and creative solutions, but we were able to do it.
+
+  * Collection, cleanup, and preparation process:
+Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some data frames together.
+The following steps needed to be done:
+
+- make an API call
+- change indexes
+- drop null values and not used columns
+- create new columns
+- concatenate 
+
+It took a lot of time and creative solutions, but we were able to do it.
 
 <img width="776" alt="Screen Shot 2021-07-15 at 1 01 55 PM" src="https://user-images.githubusercontent.com/80833988/125850187-7fb9109b-55e0-4aaf-a48c-30ec0022fbbd.png">
 
@@ -171,11 +180,11 @@ Some sourses return data in json format, which has different frame construction.
 
  * We used yfinance to get ohlcav data from yahoo finance for a period of time
   Technical Indicator is essentially a mathematical representation based on data sets to forecast price trends. Choosing the right set of indicators  and incorporating them into code was another challange. 
- * Using the ohlcav and finta data we built 3 technical indicators: RSI , CCI and MACD 
-    * RSI (Relative Strength Index) - is a momentum indicator used in technical analysis that measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset.
-    * CCI (Commodity Channel Index) - is a momentum-based oscillator used to help determine when an investment vehicle is reaching a condition of being overbought or oversold.
-    * MACD (Moving Average Convergence Divergence) is a trend-following momentum indicator that shows the relationship between two moving averages of a security’s price.
->"([Investopedia](https://www.investopedia.com/))"
+ 
+ >"([Investopedia](https://www.investopedia.com/))"
+ 
+  <img width="833" alt="Screen Shot 2021-07-15 at 2 08 13 PM" src="https://user-images.githubusercontent.com/80833988/125857939-5527387f-1239-4b1a-965e-50f11d95641f.png">
+
 
  * Using the indicators we added a signal column to indicate when we should buy a call or sell our call
 
@@ -187,7 +196,6 @@ Another challenge was to convert data for [sentiment analyses](https://sentiment
 <img width="957" alt="Screen Shot 2021-07-15 at 12 23 45 PM" src="https://user-images.githubusercontent.com/80833988/125845717-4cde782e-3553-40b5-af03-358c04376a9c.png">
 
 ### Combined Strategy
-
 
 
 ### Machine Lerning 
@@ -214,23 +222,10 @@ we train models
 >" Discuss any unanticipated insights or problems that arose and how you resolved them."
 
 1. Finding data. 
-
 2. Unifying the data
-
-
 3. Difficulty in pricing options 
-
  Very hard to put  into code a process of forecasting option contract prices. Our solution was to changed the strategy. Instead we are forecasting stock prices. Because stock price directly correlates with option contracts price change we can use machine learning strategies we developeped to make a desision to buy or sell stock.
  
- 4. 
-
-
-
-
-
-
-
-
 
 ### Next steps
  * Potential next steps for the project would be 
@@ -238,18 +233,12 @@ we train models
     * Try the strategy on different stocks
     * Incorporate Deep Learning Network 
  
- * If we had more timewe would continue our research in following areas:
+ * If we had more time we would continue our research in following areas:
     * Build a bot or some other interface to automatically placed orders or execute buy/sell in real time
     * Link real accounts to the algorithm and actually start executing our strategy
     * Explore more complex trading strategies, like Iron Condor 
 
 >"An iron condor is an options strategy consisting of two puts (one long and one short) and two calls (one long and one short), and four strike prices, all with the same expiration date. The iron condor earns the maximum profit when the underlying asset closes between the middle strike prices at expiration. In other words, the goal is to profit from low volatility in the underlying asset."
-
-
-
-
-
-
 
 
 ### How to install
@@ -280,7 +269,7 @@ jupyter lab
 
 ##### Alpaca API call
 
-In order to succesfully run the file you have to generate your own Alpaca key and save it to .env file. Those files are hidden so Hold down the Command, Shift and Period keys (for Mac) to be sure you have it in the same folder as Jupyter Lab notebook
+In order to successfully  run the file you have to generate your own Alpaca key and save it to .env file. Those files are hidden so Hold down the Command, Shift and Period keys (for Mac) to be sure you have it in the same folder as Jupyter Lab notebook
 
 ```
  cmd + shift + [.]
@@ -293,7 +282,7 @@ ALPACA_SECRET_KEY = '<your key>'
 
 ```
 
-Those steps are nessesary to maintain a security of private information. 
+Those steps are necessary to maintain a security of private information. 
 
 
 
