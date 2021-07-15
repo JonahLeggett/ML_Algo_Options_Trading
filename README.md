@@ -96,7 +96,7 @@ Get high quality, granular data, on what people are saying on various social pla
 
 
 
-## Machine Learning (40 points)
+## Machine Learning 
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
 * We created 2 mashine learning models: 
    * SVC model (Support Vector Classification) 
@@ -130,7 +130,7 @@ Get high quality, granular data, on what people are saying on various social pla
 
 
 
-## Documentation 
+# Documentation 
 
 * You can find Code in Jupyter Notebook is well commented with concise, relevant notes. 
 
@@ -140,7 +140,8 @@ Get high quality, granular data, on what people are saying on various social pla
 * GitHub README.md file includes examples of the application AND the results with progected revenue.
 
 
-## Presentation 
+
+# Presentation 
 
 <img width="1001" alt="Screen Shot 2021-07-15 at 12 48 03 PM" src="https://user-images.githubusercontent.com/80833988/125848526-be01eb85-377b-49c1-bbc0-a58ce6e47d25.png">
 
@@ -169,18 +170,25 @@ Some sourses return data in json format, which has different frame construction.
 ### Technical Analysis
 
  * We used yfinance to get ohlcav data from yahoo finance for a period of time
- * Using the ohlcav and finta data we built 3 technical indicators: RSI , CCI and MACD
-   * RSI 
-   * CCI
-   * MACD
+  Technical Indicator is essentially a mathematical representation based on data sets to forecast price trends. Choosing the right set of indicators  and incorporating them into code was another challange. 
+ * Using the ohlcav and finta data we built 3 technical indicators: RSI , CCI and MACD 
+    * RSI (Relative Strength Index) - is a momentum indicator used in technical analysis that measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset.
+    * CCI (Commodity Channel Index) - is a momentum-based oscillator used to help determine when an investment vehicle is reaching a condition of being overbought or oversold.
+    * MACD (Moving Average Convergence Divergence) is a trend-following momentum indicator that shows the relationship between two moving averages of a security’s price.
+>"([Investopedia](https://www.investopedia.com/))"
+
  * Using the indicators we added a signal column to indicate when we should buy a call or sell our call
 
 
 ### Sentiment Analysis
 
+Another challenge was to convert data for [sentiment analyses](https://sentimentinvestor.com/) into a single data frame and working through that data
+
 <img width="957" alt="Screen Shot 2021-07-15 at 12 23 45 PM" src="https://user-images.githubusercontent.com/80833988/125845717-4cde782e-3553-40b5-af03-358c04376a9c.png">
 
 ### Combined Strategy
+
+
 
 ### Machine Lerning 
 
@@ -192,7 +200,7 @@ Some sourses return data in json format, which has different frame construction.
  
 we train models 
 
-tech indicators: moving  MACD RSI CCI
+
 
 
 
@@ -214,14 +222,10 @@ tech indicators: moving  MACD RSI CCI
 
  Very hard to put  into code a process of forecasting option contract prices. Our solution was to changed the strategy. Instead we are forecasting stock prices. Because stock price directly correlates with option contracts price change we can use machine learning strategies we developeped to make a desision to buy or sell stock.
  
- 4. Choosing iindicators and incorporating them into code.
-  Technical Indicator is essentially a mathematical representation based on data sets to forecast price trends. Choosing the right set of indicators was another challange. We end up using:
- ........................
- 
- 5. How do we convert sentiment analyses?
-Another challenge was to convert data for [sentiment analyses](https://sentimentinvestor.com/) into a single data frame and working through that data
+ 4. 
 
-6. Create and fill up "buy/sell" table. 
+
+
 
 
 
