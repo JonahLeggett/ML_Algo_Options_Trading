@@ -63,9 +63,9 @@ Because of the huge diversity of historical options data and their relatively fe
 
 
 
-## Data Collection and Preparation (10 points)
+## Data Collection and Preparation (
 
-* API calls from multiple sourses, working on multiple databases created by using Python and Python library. 
+* API calls from multiple sourses, working on different databases created by using Python and following Python libraries. 
 
 #### Libraries 
 
@@ -73,6 +73,7 @@ Because of the huge diversity of historical options data and their relatively fe
 * With the combination of Pandas and Jupyter Notebook, you can efficiently import, prepare, and analyze data of any type or quantity.
 * We created a Google Collab group to take advantage of the speed and convenience of collaborative cloud environment.
 * Following libraries were used to analyze the data 
+
 
 [
 <img width="686" alt="Screen Shot 2021-07-14 at 7 31 39 PM" src="https://user-images.githubusercontent.com/80833988/125718772-f6bdf922-fdff-4b1d-87e3-f5a9dc2b2f63.png">
@@ -102,16 +103,13 @@ Get high quality, granular data, on what people are saying on various social pla
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
 * We created ....... mashine learning models
 
-##### Linear and Polynomial Regression
-
-We are using both linear and polynomial regression  machine learning models, depends on what kind of prediction we are trying to make and the occuring trend.
-
-
-<img width="463" alt="Screen Shot 2021-07-13 at 6 51 19 PM" src="https://user-images.githubusercontent.com/80833988/125547952-636a2a91-d547-49ad-8885-fc09328423bc.png">
+##### Linear Regression
 
 >"Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
-Polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y and considered to be a special case of multiple linear regression
 "
+[
+<img width="576" alt="Screen Shot 2021-07-14 at 10 04 21 PM" src="https://user-images.githubusercontent.com/80833988/125731659-7cc1482a-2c9c-4b4b-b969-3677d579067a.png">
+](url)
 
 * Models fit to the training data. (5 points) 
 * Trained models evaluated by using the testing data. Calculations, metrics, or visualizations that are needed to evaluate the performance included. (10 points) 
@@ -192,24 +190,24 @@ Some sourses return data in json format, which has different frame construction.
  5. How do we convert sentiment analyses?
 Another challenge was to convert data for [sentiment analyses](https://sentimentinvestor.com/) into a single data frame and working through that data
 
-6. Create and fill up "buy/sell" column 
+6. Create and fill up "buy/sell" table. 
 
 
 
 
 
 
-### Next steps. (2 points)
-  * Potential next steps for the project would be 
-1.Adding more indicators or trying different set of indicators
-2. Try the strategy on different stocks
-3. Incorporate Deep Learning Network 
+### Next steps
+ * Potential next steps for the project would be 
+    * Adding more indicators or trying different set of indicators
+    * Try the strategy on different stocks
+    * Incorporate Deep Learning Network 
  
-    * If we had more timewe would continue our research in following areas:
-1. Build a bot or some other interface to automatically placed orders or execute buy/sell in real time
-2. Link real accounts to the algorithm and actually start executing our strategy
-3. Explore more complex trading strategies, like Iron Condor 
-4. 
+ * If we had more timewe would continue our research in following areas:
+    * Build a bot or some other interface to automatically placed orders or execute buy/sell in real time
+    * Link real accounts to the algorithm and actually start executing our strategy
+    * Explore more complex trading strategies, like Iron Condor 
+
 >"An iron condor is an options strategy consisting of two puts (one long and one short) and two calls (one long and one short), and four strike prices, all with the same expiration date. The iron condor earns the maximum profit when the underlying asset closes between the middle strike prices at expiration. In other words, the goal is to profit from low volatility in the underlying asset."
 
 
