@@ -288,12 +288,12 @@ Those steps are necessary to maintain a security of private information.
 
 ## License
 
-:star: MIT
+:star: MIT [LICENSE](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/LICENSE)
 
 ## Links
 
 * [CODE](https://github.com/JonahLeggett/ML_Algo_Options_Trading/blob/main/MLAlgoOptionsTrading.ipynb)
 * [Repository copy link](https://github.com/JonahLeggett/ML_Algo_Options_Trading.git)
-* [Presentation Prezi Website](https://prezi.com/view/W5tupw5i0Ap6HAeHcCsT/)
+* [Presentation Prezi Website](https://prezi.com/view/IW1jrYNpMi6QvMPH7DrA/)
 
 
