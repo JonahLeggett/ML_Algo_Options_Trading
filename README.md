@@ -100,12 +100,12 @@ Get high quality, granular data, on what people are saying on various social pla
 * Jupyter notebook and Google Colab. We used group work feature in Google Collab to be able to simultaneously work on code and make a changes in real time.
 * We created 2 mashine learning models: 
 
-   1. SVC model (Support Vector Classification) 
+   ##### SVC model (Support Vector Classification) 
 >" Support-vector machines are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis"
 
 <img width="394" alt="Screen Shot 2021-07-15 at 2 22 19 PM" src="https://user-images.githubusercontent.com/80833988/125859439-a95b5fea-6f68-4b3d-a015-ebe0e610f3f9.png">
 
-   2. LR model(Multinomial Logistic Regression) - new machine learning model that the class hasn't already covered
+   ##### LR model(Multinomial Logistic Regression) - new machine learning model that the class hasn't already covered
 
 >"Multinomial Logistic Regression is a statistical test used to predict a single categorical variable using one or more other variables. It also is used to determine the numerical relationship between such sets of variables."
 
@@ -162,11 +162,11 @@ Get high quality, granular data, on what people are saying on various social pla
 Some sourses return data in json format, which has different frame construction. Our solution was to create new data frames, change indexes, concatinate or join some data frames together.
 The following steps needed to be done:
 
-- make an API call
-- change indexes
-- drop null values and not used columns
-- create new columns
-- concatenate 
+ * make an API call
+ * change indexes
+ * drop null values and not used columns
+ * create new columns
+ * concatenate 
 
 It took a lot of time and creative solutions, but we were able to do it.
 
